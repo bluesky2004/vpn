@@ -9568,8 +9568,6 @@ singBoxVersionManageMenu() {
 menu() {
     cd "$HOME" || exit
     echoContent red "\n=============================================================="
-    showInstallStatus
-    checkWgetShowProgress
     if [[ -n "${coreInstallType}" ]]; then
         echoContent yellow "1.重新安装"
     else
